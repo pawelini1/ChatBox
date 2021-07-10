@@ -8,7 +8,8 @@
 import UIKit
 
 protocol ChatViewLogic: AnyObject {
-    
+    func display(viewModels: [MessageViewModel])
+    func display(message: String)
 }
 
 class ChatViewController: UIViewController {
@@ -27,8 +28,23 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .red
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        interactor.showInitialMessages()
+    }
 }
 
 extension ChatViewController: ChatViewLogic {
+    func display(message: String) {
+        let alertController = UIAlertController(title: Localized.string(key: "error.message.title"),
+                                                message: Localized.string(key: "error.message.message") + message,
+                                                preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: Localized.string(key: "error.message.ok"), style: .default) { _ in })
+        present(alertController, animated: true, completion: nil)
+    }
     
+    func display(viewModels: [MessageViewModel]) {
+        
+    }
 }

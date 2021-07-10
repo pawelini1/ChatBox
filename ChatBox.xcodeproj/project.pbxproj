@@ -18,6 +18,16 @@
 		3DB6D0F7269A2C2100B2E67C /* ChatViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0F6269A2C2100B2E67C /* ChatViewControllerFactory.swift */; };
 		3DB6D102269A322300B2E67C /* ChatJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D101269A322300B2E67C /* ChatJourney.swift */; };
 		3DB6D108269A32A900B2E67C /* ApplicationJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D107269A32A900B2E67C /* ApplicationJourney.swift */; };
+		3DB6D10F269A358600B2E67C /* MessagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D10E269A358600B2E67C /* MessagesService.swift */; };
+		3DB6D117269A35D400B2E67C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D116269A35D400B2E67C /* Message.swift */; };
+		3DB6D11D269A369F00B2E67C /* StaticMessagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D11C269A369F00B2E67C /* StaticMessagesService.swift */; };
+		3DB6D129269A3F0800B2E67C /* Result+On.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D128269A3F0800B2E67C /* Result+On.swift */; };
+		3DB6D131269A41A600B2E67C /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D130269A41A600B2E67C /* Localized.swift */; };
+		3DB6D13D269A425D00B2E67C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D13F269A425D00B2E67C /* Localizable.strings */; };
+		3DB6D144269A475C00B2E67C /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D143269A475C00B2E67C /* MessageViewModel.swift */; };
+		3DB6D149269A49AE00B2E67C /* DefaultDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D148269A49AE00B2E67C /* DefaultDateFormatter.swift */; };
+		3DB6D14E269A4AF200B2E67C /* String+Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */; };
+		3DB6D153269A4B1100B2E67C /* TimeInterval+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,16 @@
 		3DB6D0F6269A2C2100B2E67C /* ChatViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewControllerFactory.swift; sourceTree = "<group>"; };
 		3DB6D101269A322300B2E67C /* ChatJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatJourney.swift; sourceTree = "<group>"; };
 		3DB6D107269A32A900B2E67C /* ApplicationJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationJourney.swift; sourceTree = "<group>"; };
+		3DB6D10E269A358600B2E67C /* MessagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesService.swift; sourceTree = "<group>"; };
+		3DB6D116269A35D400B2E67C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3DB6D11C269A369F00B2E67C /* StaticMessagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticMessagesService.swift; sourceTree = "<group>"; };
+		3DB6D128269A3F0800B2E67C /* Result+On.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+On.swift"; sourceTree = "<group>"; };
+		3DB6D130269A41A600B2E67C /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		3DB6D13E269A425D00B2E67C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DB6D143269A475C00B2E67C /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		3DB6D148269A49AE00B2E67C /* DefaultDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDateFormatter.swift; sourceTree = "<group>"; };
+		3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Lorem.swift"; sourceTree = "<group>"; };
+		3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Dates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +125,10 @@
 		3DB6D0A4269A288C00B2E67C /* ChatBox */ = {
 			isa = PBXGroup;
 			children = (
+				3DB6D137269A421300B2E67C /* Resources */,
+				3DB6D127269A3EDA00B2E67C /* Helpers */,
+				3DB6D10D269A355100B2E67C /* Services */,
+				3DB6D10C269A354000B2E67C /* Models */,
 				3DB6D0D8269A28B800B2E67C /* Scenes */,
 				3DB6D0A5269A288C00B2E67C /* AppDelegate.swift */,
 				3DB6D0AE269A288D00B2E67C /* Assets.xcassets */,
@@ -149,6 +173,7 @@
 				3DB6D0EE269A2AA300B2E67C /* ChatPresenter.swift */,
 				3DB6D0F6269A2C2100B2E67C /* ChatViewControllerFactory.swift */,
 				3DB6D101269A322300B2E67C /* ChatJourney.swift */,
+				3DB6D143269A475C00B2E67C /* MessageViewModel.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -159,6 +184,51 @@
 				3DB6D107269A32A900B2E67C /* ApplicationJourney.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		3DB6D10C269A354000B2E67C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D116269A35D400B2E67C /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3DB6D10D269A355100B2E67C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D11B269A365600B2E67C /* Messages */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3DB6D11B269A365600B2E67C /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D10E269A358600B2E67C /* MessagesService.swift */,
+				3DB6D11C269A369F00B2E67C /* StaticMessagesService.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		3DB6D127269A3EDA00B2E67C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D130269A41A600B2E67C /* Localized.swift */,
+				3DB6D148269A49AE00B2E67C /* DefaultDateFormatter.swift */,
+				3DB6D128269A3F0800B2E67C /* Result+On.swift */,
+				3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */,
+				3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DB6D137269A421300B2E67C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D13F269A425D00B2E67C /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB6D13D269A425D00B2E67C /* Localizable.strings in Resources */,
 				3DB6D0B2269A288D00B2E67C /* LaunchScreen.storyboard in Resources */,
 				3DB6D0AF269A288D00B2E67C /* Assets.xcassets in Resources */,
 			);
@@ -291,10 +362,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB6D0A6269A288C00B2E67C /* AppDelegate.swift in Sources */,
+				3DB6D131269A41A600B2E67C /* Localized.swift in Sources */,
+				3DB6D149269A49AE00B2E67C /* DefaultDateFormatter.swift in Sources */,
+				3DB6D153269A4B1100B2E67C /* TimeInterval+Dates.swift in Sources */,
+				3DB6D14E269A4AF200B2E67C /* String+Lorem.swift in Sources */,
+				3DB6D10F269A358600B2E67C /* MessagesService.swift in Sources */,
+				3DB6D11D269A369F00B2E67C /* StaticMessagesService.swift in Sources */,
 				3DB6D0DB269A28DA00B2E67C /* ChatViewController.swift in Sources */,
+				3DB6D117269A35D400B2E67C /* Message.swift in Sources */,
+				3DB6D129269A3F0800B2E67C /* Result+On.swift in Sources */,
 				3DB6D102269A322300B2E67C /* ChatJourney.swift in Sources */,
 				3DB6D0F7269A2C2100B2E67C /* ChatViewControllerFactory.swift in Sources */,
 				3DB6D0EF269A2AA300B2E67C /* ChatPresenter.swift in Sources */,
+				3DB6D144269A475C00B2E67C /* MessageViewModel.swift in Sources */,
 				3DB6D108269A32A900B2E67C /* ApplicationJourney.swift in Sources */,
 				3DB6D0EA269A2A9000B2E67C /* ChatInteractor.swift in Sources */,
 			);
@@ -338,6 +418,14 @@
 				3DB6D0B1269A288D00B2E67C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB6D13F269A425D00B2E67C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB6D13E269A425D00B2E67C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

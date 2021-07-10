@@ -18,7 +18,9 @@ class ChatViewControllerFactory {
 extension ChatViewControllerFactory: ChatViewControllerFactoryProtocol {
     func makeViewController() -> UIViewController {
         let presenter = ChatPresenter()
-        let interactor = ChatInteractor(presenter: presenter)
+        let randomMessages = (0..<50).map { (Int) -> Message in Message.randomMessage() }
+        let service = StaticMessagesService(messages: randomMessages)
+        let interactor = ChatInteractor(presenter: presenter, service: service)
         let viewController = ChatViewController(interactor: interactor)
         presenter.view = viewController
         return viewController

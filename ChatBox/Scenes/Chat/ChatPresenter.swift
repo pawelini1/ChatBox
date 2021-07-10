@@ -5,10 +5,9 @@
 //  Created by Pawel Szymanski on 10/07/2021.
 //
 
-import Foundation
-
 protocol ChatPresentationLogic {
-    
+    func present(messages: [Message])
+    func present(error: Error)
 }
 
 class ChatPresenter {
@@ -16,5 +15,14 @@ class ChatPresenter {
 }
 
 extension ChatPresenter: ChatPresentationLogic {
+    func present(messages: [Message]) {
+        
+        view?.display(viewModels: messages
+                        .sorted { $0.creationDate > $1.creationDate }
+                        .map { MessageViewModel(message: $0)})
+    }
     
+    func present(error: Error) {
+        view?.display(message: error.localizedDescription)
+    }
 }

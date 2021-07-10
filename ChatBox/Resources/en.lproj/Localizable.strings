@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  ChatBox
+
+  Created by Pawel Szymanski on 10/07/2021.
+  
+*/
+
+"error.message.title" = "Oops something went wrong";
+"error.message.message" = "Try again later... unless this actually tells you something: ";
+"error.message.ok" = "OK";
