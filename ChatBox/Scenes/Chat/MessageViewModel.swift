@@ -8,9 +8,9 @@
 import Foundation
 
 struct MessageViewModel {
-    private let text: String
-    private let author: String
-    private let date: String
+    let text: String
+    let author: String
+    let date: String
     
     init(message: Message, dateFormatter: DateFormatter = DefaultDateFormatter.dateShort) {
         self.init(text: message.text,

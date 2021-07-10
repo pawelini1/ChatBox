@@ -28,6 +28,7 @@
 		3DB6D149269A49AE00B2E67C /* DefaultDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D148269A49AE00B2E67C /* DefaultDateFormatter.swift */; };
 		3DB6D14E269A4AF200B2E67C /* String+Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */; };
 		3DB6D153269A4B1100B2E67C /* TimeInterval+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */; };
+		3DB6D158269A4BEF00B2E67C /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		3DB6D148269A49AE00B2E67C /* DefaultDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDateFormatter.swift; sourceTree = "<group>"; };
 		3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Lorem.swift"; sourceTree = "<group>"; };
 		3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Dates.swift"; sourceTree = "<group>"; };
+		3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				3DB6D0F6269A2C2100B2E67C /* ChatViewControllerFactory.swift */,
 				3DB6D101269A322300B2E67C /* ChatJourney.swift */,
 				3DB6D143269A475C00B2E67C /* MessageViewModel.swift */,
+				3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			files = (
 				3DB6D13D269A425D00B2E67C /* Localizable.strings in Resources */,
 				3DB6D0B2269A288D00B2E67C /* LaunchScreen.storyboard in Resources */,
+				3DB6D158269A4BEF00B2E67C /* ChatViewController.xib in Resources */,
 				3DB6D0AF269A288D00B2E67C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

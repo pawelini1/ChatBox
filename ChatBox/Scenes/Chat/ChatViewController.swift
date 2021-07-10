@@ -15,18 +15,15 @@ protocol ChatViewLogic: AnyObject {
 class ChatViewController: UIViewController {
     private let interactor: ChatBusinessLogic
     
+    @IBOutlet private var messagesStackView: UIStackView!
+    
     init(interactor: ChatBusinessLogic) {
         self.interactor = interactor
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: "ChatViewController", bundle: nil)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,6 +42,12 @@ extension ChatViewController: ChatViewLogic {
     }
     
     func display(viewModels: [MessageViewModel]) {
-        
+        messagesStackView.arrangedSubviews.forEach { messagesStackView.removeArrangedSubview($0) }
+        viewModels.enumerated().forEach { model in
+            let label = UILabel()
+            label.text = model.element.date
+            label.backgroundColor = model.offset % 2 == 0 ? .green : .systemPink
+            messagesStackView.addArrangedSubview(label)
+        }
     }
 }

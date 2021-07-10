@@ -16,9 +16,8 @@ class ChatPresenter {
 
 extension ChatPresenter: ChatPresentationLogic {
     func present(messages: [Message]) {
-        
         view?.display(viewModels: messages
-                        .sorted { $0.creationDate > $1.creationDate }
+                        .sorted { $0.creationDate < $1.creationDate }
                         .map { MessageViewModel(message: $0)})
     }
     

@@ -10,7 +10,7 @@ import Foundation
 class DefaultDateFormatter {
     static var dateShort: DateFormatter = {
         let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "MMM d, h:mm a"
+        dateFormatterPrint.dateFormat = "MMM d, HH:mm"
         return dateFormatterPrint
     }()
 }

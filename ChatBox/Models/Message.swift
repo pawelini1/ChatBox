@@ -18,6 +18,6 @@ struct Message: Codable {
         return Message(identifer: UUID().uuidString,
                        text: .loremIpsum,
                        author: Int.random(in: 0...1) == 0 ? "Mary" : "John",
-                       creationDate: now.addingTimeInterval(.day * Double.random(in: 0.0...1.0)))
+                       creationDate: now.addingTimeInterval(.day * Double.random(in: 0.0...10.0)))
     }
 }
