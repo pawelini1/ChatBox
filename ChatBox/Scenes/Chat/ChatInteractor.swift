@@ -9,6 +9,7 @@ import Foundation
 
 protocol ChatBusinessLogic {
     func showInitialMessages()
+    func sendMessage(text: String)
 }
 
 class ChatInteractor {
@@ -27,6 +28,15 @@ extension ChatInteractor: ChatBusinessLogic {
         service.getMessages { [weak self] result in
             guard let self = self else { return }
             result.onSuccess { self.presenter.present(messages: $0) }
+            result.onFailure { self.presenter.present(error: $0)}
+        }
+    }
+    
+    func sendMessage(text: String) {
+        guard !text.isEmpty else { return }
+        service.sendMessage(text: text) { [weak self] result in
+            guard let self = self else { return }
+            result.onSuccess { self.presenter.present(newMessage: $0) }
             result.onFailure { self.presenter.present(error: $0)}
         }
     }

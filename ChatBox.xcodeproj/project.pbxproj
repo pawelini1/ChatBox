@@ -29,6 +29,8 @@
 		3DB6D14E269A4AF200B2E67C /* String+Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */; };
 		3DB6D153269A4B1100B2E67C /* TimeInterval+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */; };
 		3DB6D158269A4BEF00B2E67C /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */; };
+		3DB6D15D269AF54F00B2E67C /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D15C269AF54F00B2E67C /* UIScrollView+Extensions.swift */; };
+		3DB6D162269B012700B2E67C /* NSNotification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D161269B012700B2E67C /* NSNotification+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Lorem.swift"; sourceTree = "<group>"; };
 		3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Dates.swift"; sourceTree = "<group>"; };
 		3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		3DB6D15C269AF54F00B2E67C /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
+		3DB6D161269B012700B2E67C /* NSNotification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 				3DB6D128269A3F0800B2E67C /* Result+On.swift */,
 				3DB6D14D269A4AF200B2E67C /* String+Lorem.swift */,
 				3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */,
+				3DB6D15C269AF54F00B2E67C /* UIScrollView+Extensions.swift */,
+				3DB6D161269B012700B2E67C /* NSNotification+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -375,10 +381,12 @@
 				3DB6D0DB269A28DA00B2E67C /* ChatViewController.swift in Sources */,
 				3DB6D117269A35D400B2E67C /* Message.swift in Sources */,
 				3DB6D129269A3F0800B2E67C /* Result+On.swift in Sources */,
+				3DB6D15D269AF54F00B2E67C /* UIScrollView+Extensions.swift in Sources */,
 				3DB6D102269A322300B2E67C /* ChatJourney.swift in Sources */,
 				3DB6D0F7269A2C2100B2E67C /* ChatViewControllerFactory.swift in Sources */,
 				3DB6D0EF269A2AA300B2E67C /* ChatPresenter.swift in Sources */,
 				3DB6D144269A475C00B2E67C /* MessageViewModel.swift in Sources */,
+				3DB6D162269B012700B2E67C /* NSNotification+Extensions.swift in Sources */,
 				3DB6D108269A32A900B2E67C /* ApplicationJourney.swift in Sources */,
 				3DB6D0EA269A2A9000B2E67C /* ChatInteractor.swift in Sources */,
 			);

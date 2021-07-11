@@ -7,6 +7,7 @@
 
 protocol ChatPresentationLogic {
     func present(messages: [Message])
+    func present(newMessage: Message)
     func present(error: Error)
 }
 
@@ -16,12 +17,16 @@ class ChatPresenter {
 
 extension ChatPresenter: ChatPresentationLogic {
     func present(messages: [Message]) {
-        view?.display(viewModels: messages
+        view?.display(messages: messages
                         .sorted { $0.creationDate < $1.creationDate }
                         .map { MessageViewModel(message: $0)})
     }
     
+    func present(newMessage: Message) {
+        view?.display(newMessage: MessageViewModel(message: newMessage))
+    }
+    
     func present(error: Error) {
-        view?.display(message: error.localizedDescription)
+        view?.display(errorMessage: error.localizedDescription)
     }
 }

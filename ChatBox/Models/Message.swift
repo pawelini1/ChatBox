@@ -13,11 +13,20 @@ struct Message: Codable {
     let author: String
     let creationDate: Date
     
+    init(identifer: String = UUID().uuidString,
+         text: String,
+         author: String,
+         creationDate: Date = .init()) {
+        self.identifer = identifer
+        self.text = text
+        self.author = author
+        self.creationDate = creationDate
+    }
+    
     static func randomMessage() -> Message {
         let now = Date()
-        return Message(identifer: UUID().uuidString,
-                       text: .loremIpsum,
+        return Message(text: .loremIpsum(wordsCount: Int.random(in: 3...20)),
                        author: Int.random(in: 0...1) == 0 ? "Mary" : "John",
-                       creationDate: now.addingTimeInterval(.day * Double.random(in: 0.0...10.0)))
+                       creationDate: now.addingTimeInterval(.day * Double.random(in: -10.0...0.0)))
     }
 }

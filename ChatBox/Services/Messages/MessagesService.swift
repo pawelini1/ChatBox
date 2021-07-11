@@ -9,4 +9,5 @@ import Foundation
 
 protocol MessagesService {
     func getMessages(completion: @escaping (Result<[Message], Error>) -> Void)
+    func sendMessage(text: String, completion: @escaping (Result<Message, Error>) -> Void)
 }

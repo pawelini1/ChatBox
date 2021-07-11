@@ -10,7 +10,7 @@ class StaticMessagesService {
         case seriousError(String)
     }
     
-    private let messages: [Message]
+    private var messages: [Message]
     
     init(messages: [Message]) {
         self.messages = messages
@@ -20,5 +20,11 @@ class StaticMessagesService {
 extension StaticMessagesService: MessagesService {
     func getMessages(completion: @escaping (Result<[Message], Swift.Error>) -> Void) {
         completion(.success(messages))
+    }
+    
+    func sendMessage(text: String, completion: @escaping (Result<Message, Swift.Error>) -> Void) {
+        let message = Message(text: text, author: "Pawel")
+        messages.append(message)
+        completion(.success(message))
     }
 }

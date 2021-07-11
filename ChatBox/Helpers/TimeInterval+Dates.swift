@@ -11,4 +11,6 @@ extension TimeInterval {
     static var minute = 60.0
     static var hour = 60.0 * minute
     static var day = 24 * hour
+    
+    static var quickAnimation = 0.3
 }
