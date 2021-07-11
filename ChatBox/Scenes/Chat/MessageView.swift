@@ -12,4 +12,19 @@ class MessageView: UIView {
     @IBOutlet private(set) var authorLabel: UILabel!
     @IBOutlet private(set) var timeLabel: UILabel!
     @IBOutlet private(set) var textLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        accessibilityIdentifier = AccessibilityIdentifiers.Chat.messageView
+    }
+}
+
+extension MessageView {
+    func apply(viewModel: MessageViewModel) {
+        authorLabel.text = viewModel.author
+        timeLabel.text = viewModel.date
+        textLabel.text = viewModel.text
+        initialsLabel.text = "\(viewModel.initials)"
+        initialsLabel.backgroundColor = viewModel.initialsColor
+    }
 }

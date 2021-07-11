@@ -23,9 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func makeApplicationJourney() -> ApplicationJourney {
-        // In general here we would put all journeys available in the application
-        let chatJourney = ChatJourney(factory: ChatViewControllerFactory())
-        return ApplicationJourney(chatJourney: chatJourney)
+        return ApplicationJourney(chatJourney: ChatJourney(factory: ChatViewControllerFactory()))
     }
 }
 

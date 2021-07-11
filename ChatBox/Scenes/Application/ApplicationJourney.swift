@@ -15,6 +15,6 @@ class ApplicationJourney {
     }
     
     func start() -> UIViewController {
-        return chatJourney.start()
+        return UINavigationController(rootViewController: chatJourney.start())
     }
 }

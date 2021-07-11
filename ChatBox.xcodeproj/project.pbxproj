@@ -10,8 +10,8 @@
 		3DB6D0A6269A288C00B2E67C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0A5269A288C00B2E67C /* AppDelegate.swift */; };
 		3DB6D0AF269A288D00B2E67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D0AE269A288D00B2E67C /* Assets.xcassets */; };
 		3DB6D0B2269A288D00B2E67C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D0B0269A288D00B2E67C /* LaunchScreen.storyboard */; };
-		3DB6D0BD269A288D00B2E67C /* ChatBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0BC269A288D00B2E67C /* ChatBoxTests.swift */; };
-		3DB6D0C8269A288D00B2E67C /* ChatBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0C7269A288D00B2E67C /* ChatBoxUITests.swift */; };
+		3DB6D0BD269A288D00B2E67C /* ChatInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0BC269A288D00B2E67C /* ChatInteractorTests.swift */; };
+		3DB6D0C8269A288D00B2E67C /* ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0C7269A288D00B2E67C /* ChatUITests.swift */; };
 		3DB6D0DB269A28DA00B2E67C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0DA269A28DA00B2E67C /* ChatViewController.swift */; };
 		3DB6D0EA269A2A9000B2E67C /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0E9269A2A9000B2E67C /* ChatInteractor.swift */; };
 		3DB6D0EF269A2AA300B2E67C /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0EE269A2AA300B2E67C /* ChatPresenter.swift */; };
@@ -34,6 +34,16 @@
 		3DB6D167269B058F00B2E67C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D166269B058F00B2E67C /* MessageView.swift */; };
 		3DB6D16C269B062700B2E67C /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D16B269B062700B2E67C /* MessageView.xib */; };
 		3DB6D171269B070D00B2E67C /* UINib+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D170269B070D00B2E67C /* UINib+Extensions.swift */; };
+		3DB6D17D269B15D800B2E67C /* Spy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D17C269B15D800B2E67C /* Spy.swift */; };
+		3DB6D185269B164B00B2E67C /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D184269B164B00B2E67C /* Stub.swift */; };
+		3DB6D18E269B16D300B2E67C /* ChatPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D18D269B16D300B2E67C /* ChatPresenterMock.swift */; };
+		3DB6D196269B17BC00B2E67C /* MessagesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D195269B17BC00B2E67C /* MessagesServiceMock.swift */; };
+		3DB6D19B269B1CC100B2E67C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D19A269B1CC100B2E67C /* Message.swift */; };
+		3DB6D1A0269B224E00B2E67C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D19F269B224E00B2E67C /* Error.swift */; };
+		3DB6D1C3269B706200B2E67C /* ChatRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1C2269B706200B2E67C /* ChatRobot.swift */; };
+		3DB6D1CC269B710C00B2E67C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */; };
+		3DB6D1D4269B71BC00B2E67C /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1D3269B71BC00B2E67C /* XCUIElement+Extensions.swift */; };
+		3DB6D1D8269B750A00B2E67C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +70,10 @@
 		3DB6D0B1269A288D00B2E67C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DB6D0B3269A288D00B2E67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB6D0B8269A288D00B2E67C /* ChatBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DB6D0BC269A288D00B2E67C /* ChatBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoxTests.swift; sourceTree = "<group>"; };
+		3DB6D0BC269A288D00B2E67C /* ChatInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractorTests.swift; sourceTree = "<group>"; };
 		3DB6D0BE269A288D00B2E67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB6D0C3269A288D00B2E67C /* ChatBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DB6D0C7269A288D00B2E67C /* ChatBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBoxUITests.swift; sourceTree = "<group>"; };
+		3DB6D0C7269A288D00B2E67C /* ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUITests.swift; sourceTree = "<group>"; };
 		3DB6D0C9269A288D00B2E67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB6D0DA269A28DA00B2E67C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		3DB6D0E9269A2A9000B2E67C /* ChatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
@@ -87,6 +97,15 @@
 		3DB6D166269B058F00B2E67C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		3DB6D16B269B062700B2E67C /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
 		3DB6D170269B070D00B2E67C /* UINib+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Extensions.swift"; sourceTree = "<group>"; };
+		3DB6D17C269B15D800B2E67C /* Spy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spy.swift; sourceTree = "<group>"; };
+		3DB6D184269B164B00B2E67C /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		3DB6D18D269B16D300B2E67C /* ChatPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenterMock.swift; sourceTree = "<group>"; };
+		3DB6D195269B17BC00B2E67C /* MessagesServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesServiceMock.swift; sourceTree = "<group>"; };
+		3DB6D19A269B1CC100B2E67C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3DB6D19F269B224E00B2E67C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		3DB6D1C2269B706200B2E67C /* ChatRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRobot.swift; sourceTree = "<group>"; };
+		3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		3DB6D1D3269B71BC00B2E67C /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +172,9 @@
 		3DB6D0BB269A288D00B2E67C /* ChatBoxTests */ = {
 			isa = PBXGroup;
 			children = (
-				3DB6D0BC269A288D00B2E67C /* ChatBoxTests.swift */,
+				3DB6D18C269B16C000B2E67C /* Mocks */,
+				3DB6D17B269B15CA00B2E67C /* Helpers */,
+				3DB6D0BC269A288D00B2E67C /* ChatInteractorTests.swift */,
 				3DB6D0BE269A288D00B2E67C /* Info.plist */,
 			);
 			path = ChatBoxTests;
@@ -162,7 +183,9 @@
 		3DB6D0C6269A288D00B2E67C /* ChatBoxUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3DB6D0C7269A288D00B2E67C /* ChatBoxUITests.swift */,
+				3DB6D1CA269B710400B2E67C /* Helpers */,
+				3DB6D1C1269B705700B2E67C /* Robots */,
+				3DB6D0C7269A288D00B2E67C /* ChatUITests.swift */,
 				3DB6D0C9269A288D00B2E67C /* Info.plist */,
 			);
 			path = ChatBoxUITests;
@@ -247,6 +270,43 @@
 				3DB6D13F269A425D00B2E67C /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DB6D17B269B15CA00B2E67C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D17C269B15D800B2E67C /* Spy.swift */,
+				3DB6D184269B164B00B2E67C /* Stub.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DB6D18C269B16C000B2E67C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D18D269B16D300B2E67C /* ChatPresenterMock.swift */,
+				3DB6D195269B17BC00B2E67C /* MessagesServiceMock.swift */,
+				3DB6D19A269B1CC100B2E67C /* Message.swift */,
+				3DB6D19F269B224E00B2E67C /* Error.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3DB6D1C1269B705700B2E67C /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D1C2269B706200B2E67C /* ChatRobot.swift */,
+			);
+			path = Robots;
+			sourceTree = "<group>";
+		};
+		3DB6D1CA269B710400B2E67C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */,
+				3DB6D1D3269B71BC00B2E67C /* XCUIElement+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +459,7 @@
 				3DB6D0EF269A2AA300B2E67C /* ChatPresenter.swift in Sources */,
 				3DB6D144269A475C00B2E67C /* MessageViewModel.swift in Sources */,
 				3DB6D162269B012700B2E67C /* NSNotification+Extensions.swift in Sources */,
+				3DB6D1D8269B750A00B2E67C /* AccessibilityIdentifiers.swift in Sources */,
 				3DB6D108269A32A900B2E67C /* ApplicationJourney.swift in Sources */,
 				3DB6D0EA269A2A9000B2E67C /* ChatInteractor.swift in Sources */,
 			);
@@ -408,7 +469,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB6D0BD269A288D00B2E67C /* ChatBoxTests.swift in Sources */,
+				3DB6D18E269B16D300B2E67C /* ChatPresenterMock.swift in Sources */,
+				3DB6D17D269B15D800B2E67C /* Spy.swift in Sources */,
+				3DB6D185269B164B00B2E67C /* Stub.swift in Sources */,
+				3DB6D19B269B1CC100B2E67C /* Message.swift in Sources */,
+				3DB6D0BD269A288D00B2E67C /* ChatInteractorTests.swift in Sources */,
+				3DB6D1A0269B224E00B2E67C /* Error.swift in Sources */,
+				3DB6D196269B17BC00B2E67C /* MessagesServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +483,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB6D0C8269A288D00B2E67C /* ChatBoxUITests.swift in Sources */,
+				3DB6D1CC269B710C00B2E67C /* AccessibilityIdentifiers.swift in Sources */,
+				3DB6D1D4269B71BC00B2E67C /* XCUIElement+Extensions.swift in Sources */,
+				3DB6D1C3269B706200B2E67C /* ChatRobot.swift in Sources */,
+				3DB6D0C8269A288D00B2E67C /* ChatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

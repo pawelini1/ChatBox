@@ -30,6 +30,11 @@ class ChatViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "ChatBox"
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         registerForKeyboardNotifications()
@@ -109,15 +114,5 @@ private extension ChatViewController {
             self.bottomSpacing.constant = 0.0
             self.view.layoutIfNeeded()
         }
-    }
-}
-
-private extension MessageView {
-    func apply(viewModel: MessageViewModel) {
-        authorLabel.text = viewModel.author
-        timeLabel.text = viewModel.date
-        textLabel.text = viewModel.text
-        initialsLabel.text = "\(viewModel.initials)"
-        initialsLabel.backgroundColor = viewModel.initialsColor
     }
 }

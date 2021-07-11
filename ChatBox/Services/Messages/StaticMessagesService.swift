@@ -6,10 +6,6 @@
 //
 
 class StaticMessagesService {
-    enum Error: Swift.Error {
-        case seriousError(String)
-    }
-    
     private var messages: [Message]
     
     init(messages: [Message]) {
