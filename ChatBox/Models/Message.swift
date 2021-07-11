@@ -26,7 +26,7 @@ struct Message: Codable {
     static func randomMessage() -> Message {
         let now = Date()
         return Message(text: .loremIpsum(wordsCount: Int.random(in: 3...20)),
-                       author: Int.random(in: 0...1) == 0 ? "Mary" : "John",
+                       author: Int.random(in: 0...1) == 0 ? "Karen" : "Lisa",
                        creationDate: now.addingTimeInterval(.day * Double.random(in: -10.0...0.0)))
     }
 }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessageView" customModule="ChatBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4K-qV-WzB">
+                    <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="j4K-qV-WzB" secondAttribute="height" multiplier="1:1" id="6ZY-Vm-PgH"/>
+                        <constraint firstAttribute="height" constant="56" id="RIP-0d-aDj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfa sdfa sdfas dfasd fas fasdf asdf asdf asdf asdf asdf asdf asdf asd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXh-YN-g6t">
+                    <rect key="frame" x="66" y="30" width="348" height="117"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pawel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-vj-ruS">
+                    <rect key="frame" x="66" y="0.0" width="51" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Sep 12, 21:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVU-AC-JGE">
+                    <rect key="frame" x="127" y="0.0" width="277" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TVU-AC-JGE" secondAttribute="trailing" constant="10" id="0qU-QD-tOi"/>
+                <constraint firstItem="k5e-vj-ruS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1gO-L2-vRb"/>
+                <constraint firstItem="jXh-YN-g6t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="5Ia-Vg-UAi"/>
+                <constraint firstItem="j4K-qV-WzB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="645-Sa-7QR"/>
+                <constraint firstItem="TVU-AC-JGE" firstAttribute="top" secondItem="k5e-vj-ruS" secondAttribute="top" id="6rc-y7-OaI"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="j4K-qV-WzB" secondAttribute="bottom" id="7nf-Zj-aZL"/>
+                <constraint firstItem="TVU-AC-JGE" firstAttribute="bottom" secondItem="k5e-vj-ruS" secondAttribute="bottom" id="W8Q-vO-gJD"/>
+                <constraint firstItem="TVU-AC-JGE" firstAttribute="leading" secondItem="k5e-vj-ruS" secondAttribute="trailing" constant="10" id="Yw6-Gy-YCa"/>
+                <constraint firstItem="j4K-qV-WzB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f13-ST-0Yd"/>
+                <constraint firstItem="k5e-vj-ruS" firstAttribute="leading" secondItem="j4K-qV-WzB" secondAttribute="trailing" constant="10" id="h2Z-sd-pz8"/>
+                <constraint firstItem="jXh-YN-g6t" firstAttribute="leading" secondItem="j4K-qV-WzB" secondAttribute="trailing" constant="10" id="suR-os-bBb"/>
+                <constraint firstItem="jXh-YN-g6t" firstAttribute="top" secondItem="k5e-vj-ruS" secondAttribute="bottom" id="thc-8s-9RS"/>
+                <constraint firstAttribute="bottom" secondItem="jXh-YN-g6t" secondAttribute="bottom" constant="5" id="vi9-Kb-uS0"/>
+                <constraint firstAttribute="trailing" secondItem="jXh-YN-g6t" secondAttribute="trailing" id="zzt-66-CT0"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="authorLabel" destination="k5e-vj-ruS" id="rAe-cq-Ib9"/>
+                <outlet property="initialsLabel" destination="j4K-qV-WzB" id="aeN-bc-wWY"/>
+                <outlet property="textLabel" destination="jXh-YN-g6t" id="uku-Ay-SPr"/>
+                <outlet property="timeLabel" destination="TVU-AC-JGE" id="L0O-F2-Eba"/>
+            </connections>
+            <point key="canvasLocation" x="-11.594202898550726" y="-124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

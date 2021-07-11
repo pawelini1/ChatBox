@@ -34,14 +34,14 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvl-3X-tNI">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XvQ-bJ-F1Y">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="XvQ-bJ-F1Y">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1000" placeholder="YES" id="eqb-8z-FSK"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" systemColor="systemBlueColor"/>
                                             <constraints>
                                                 <constraint firstItem="XvQ-bJ-F1Y" firstAttribute="top" secondItem="vvl-3X-tNI" secondAttribute="top" id="C7F-nP-DXe"/>
                                                 <constraint firstAttribute="bottom" secondItem="XvQ-bJ-F1Y" secondAttribute="bottom" id="ZTT-EA-opy"/>
@@ -121,6 +121,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -70,12 +70,9 @@ extension ChatViewController: ChatViewLogic {
 
 private extension ChatViewController {
     func appendNewMessage(_ viewModel: MessageViewModel) {
-        let label = UILabel()
-        label.text = viewModel.text
-        label.numberOfLines = 0
-        label.layer.borderWidth = 2.0
-        label.layer.borderColor = UIColor.black.cgColor
-        messagesStackView.addArrangedSubview(label)
+        let view: MessageView = UINib(for: MessageView.self).build()
+        view.apply(viewModel: viewModel)
+        messagesStackView.addArrangedSubview(view)
     }
     
     func scrollToBottom(animated: Bool = true) {
@@ -112,5 +109,15 @@ private extension ChatViewController {
             self.bottomSpacing.constant = 0.0
             self.view.layoutIfNeeded()
         }
+    }
+}
+
+private extension MessageView {
+    func apply(viewModel: MessageViewModel) {
+        authorLabel.text = viewModel.author
+        timeLabel.text = viewModel.date
+        textLabel.text = viewModel.text
+        initialsLabel.text = "\(viewModel.initials)"
+        initialsLabel.backgroundColor = viewModel.initialsColor
     }
 }

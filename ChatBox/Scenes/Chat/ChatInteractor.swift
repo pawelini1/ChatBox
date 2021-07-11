@@ -33,8 +33,11 @@ extension ChatInteractor: ChatBusinessLogic {
     }
     
     func sendMessage(text: String) {
-        guard !text.isEmpty else { return }
-        service.sendMessage(text: text) { [weak self] result in
+        let finalText = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard !finalText.isEmpty else { return }
+        
+        service.sendMessage(text: finalText) { [weak self] result in
             guard let self = self else { return }
             result.onSuccess { self.presenter.present(newMessage: $0) }
             result.onFailure { self.presenter.present(error: $0)}

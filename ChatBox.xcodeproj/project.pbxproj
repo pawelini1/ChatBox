@@ -31,6 +31,9 @@
 		3DB6D158269A4BEF00B2E67C /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */; };
 		3DB6D15D269AF54F00B2E67C /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D15C269AF54F00B2E67C /* UIScrollView+Extensions.swift */; };
 		3DB6D162269B012700B2E67C /* NSNotification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D161269B012700B2E67C /* NSNotification+Extensions.swift */; };
+		3DB6D167269B058F00B2E67C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D166269B058F00B2E67C /* MessageView.swift */; };
+		3DB6D16C269B062700B2E67C /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D16B269B062700B2E67C /* MessageView.xib */; };
+		3DB6D171269B070D00B2E67C /* UINib+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D170269B070D00B2E67C /* UINib+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		3DB6D15C269AF54F00B2E67C /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		3DB6D161269B012700B2E67C /* NSNotification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extensions.swift"; sourceTree = "<group>"; };
+		3DB6D166269B058F00B2E67C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		3DB6D16B269B062700B2E67C /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		3DB6D170269B070D00B2E67C /* UINib+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,8 @@
 				3DB6D101269A322300B2E67C /* ChatJourney.swift */,
 				3DB6D143269A475C00B2E67C /* MessageViewModel.swift */,
 				3DB6D157269A4BEF00B2E67C /* ChatViewController.xib */,
+				3DB6D166269B058F00B2E67C /* MessageView.swift */,
+				3DB6D16B269B062700B2E67C /* MessageView.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 				3DB6D152269A4B1100B2E67C /* TimeInterval+Dates.swift */,
 				3DB6D15C269AF54F00B2E67C /* UIScrollView+Extensions.swift */,
 				3DB6D161269B012700B2E67C /* NSNotification+Extensions.swift */,
+				3DB6D170269B070D00B2E67C /* UINib+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -345,6 +354,7 @@
 			files = (
 				3DB6D13D269A425D00B2E67C /* Localizable.strings in Resources */,
 				3DB6D0B2269A288D00B2E67C /* LaunchScreen.storyboard in Resources */,
+				3DB6D16C269B062700B2E67C /* MessageView.xib in Resources */,
 				3DB6D158269A4BEF00B2E67C /* ChatViewController.xib in Resources */,
 				3DB6D0AF269A288D00B2E67C /* Assets.xcassets in Resources */,
 			);
@@ -378,10 +388,12 @@
 				3DB6D14E269A4AF200B2E67C /* String+Lorem.swift in Sources */,
 				3DB6D10F269A358600B2E67C /* MessagesService.swift in Sources */,
 				3DB6D11D269A369F00B2E67C /* StaticMessagesService.swift in Sources */,
+				3DB6D171269B070D00B2E67C /* UINib+Extensions.swift in Sources */,
 				3DB6D0DB269A28DA00B2E67C /* ChatViewController.swift in Sources */,
 				3DB6D117269A35D400B2E67C /* Message.swift in Sources */,
 				3DB6D129269A3F0800B2E67C /* Result+On.swift in Sources */,
 				3DB6D15D269AF54F00B2E67C /* UIScrollView+Extensions.swift in Sources */,
+				3DB6D167269B058F00B2E67C /* MessageView.swift in Sources */,
 				3DB6D102269A322300B2E67C /* ChatJourney.swift in Sources */,
 				3DB6D0F7269A2C2100B2E67C /* ChatViewControllerFactory.swift in Sources */,
 				3DB6D0EF269A2AA300B2E67C /* ChatPresenter.swift in Sources */,
