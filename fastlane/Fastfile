@@ -1,0 +1,17 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :test do
+    require 'xcodeproj'
+    
+    scheme = Xcodeproj::XCScheme.new("../ChatBox.xcodeproj/xcshareddata/xcschemes/ChatBox.xcscheme") 
+    scheme.launch_action.environment_variables['HTTP_SHELL_URL'] = "http://localhost:9999/";
+    scheme.save!
+    run_tests(
+      derived_data_path: "build",
+      clean: true,
+      prelaunch_simulator: true
+    )
+  end
+end

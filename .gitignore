@@ -1,0 +1,6 @@
+build
+vendor
+ChatBox.xcodeproj/project.xcworkspace/xcuserdata/pszymanski.xcuserdatad
+ChatBox.xcodeproj/xcuserdata/pszymanski.xcuserdatad
+fastlane/test_output
+report.xml

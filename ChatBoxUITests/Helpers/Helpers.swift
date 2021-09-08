@@ -1,5 +1,5 @@
 //
-//  AccessibilityIdentifiers.swift
+//  Helpers.swift
 //  ChatBoxUITests
 //
 //  Created by Pawel Szymanski on 11/07/2021.
@@ -15,3 +15,4 @@ struct AccessibilityIdentifiers {
         static let messageView = "ChatBox.Chat.MessageView"
     }
 }
+

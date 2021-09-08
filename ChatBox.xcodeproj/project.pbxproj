@@ -3,15 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D36A79D26E37F1600A01D6F /* FailingTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36A79B26E37F1600A01D6F /* FailingTestExample.swift */; };
+		3D36A79E26E37F1600A01D6F /* RecordVideoTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36A79C26E37F1600A01D6F /* RecordVideoTestExample.swift */; };
+		3DA008E9269CD8C200BF367E /* TestRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA008E8269CD8C200BF367E /* TestRecorder.swift */; };
+		3DB16A2726E8E5F300EC63DC /* SwiftTestKit in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 3DB16A2626E8E5F300EC63DC /* SwiftTestKit */; };
+		3DB16A2B26E9430C00EC63DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB16A2A26E9430C00EC63DC /* Extensions.swift */; };
 		3DB6D0A6269A288C00B2E67C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0A5269A288C00B2E67C /* AppDelegate.swift */; };
 		3DB6D0AF269A288D00B2E67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D0AE269A288D00B2E67C /* Assets.xcassets */; };
 		3DB6D0B2269A288D00B2E67C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6D0B0269A288D00B2E67C /* LaunchScreen.storyboard */; };
 		3DB6D0BD269A288D00B2E67C /* ChatInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0BC269A288D00B2E67C /* ChatInteractorTests.swift */; };
-		3DB6D0C8269A288D00B2E67C /* ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0C7269A288D00B2E67C /* ChatUITests.swift */; };
+		3DB6D0C8269A288D00B2E67C /* SuccessfulTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0C7269A288D00B2E67C /* SuccessfulTestExample.swift */; };
 		3DB6D0DB269A28DA00B2E67C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0DA269A28DA00B2E67C /* ChatViewController.swift */; };
 		3DB6D0EA269A2A9000B2E67C /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0E9269A2A9000B2E67C /* ChatInteractor.swift */; };
 		3DB6D0EF269A2AA300B2E67C /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D0EE269A2AA300B2E67C /* ChatPresenter.swift */; };
@@ -41,9 +46,9 @@
 		3DB6D19B269B1CC100B2E67C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D19A269B1CC100B2E67C /* Message.swift */; };
 		3DB6D1A0269B224E00B2E67C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D19F269B224E00B2E67C /* Error.swift */; };
 		3DB6D1C3269B706200B2E67C /* ChatRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1C2269B706200B2E67C /* ChatRobot.swift */; };
-		3DB6D1CC269B710C00B2E67C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */; };
+		3DB6D1CC269B710C00B2E67C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1CB269B710C00B2E67C /* Helpers.swift */; };
 		3DB6D1D4269B71BC00B2E67C /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1D3269B71BC00B2E67C /* XCUIElement+Extensions.swift */; };
-		3DB6D1D8269B750A00B2E67C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */; };
+		3DB6D1D8269B750A00B2E67C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6D1CB269B710C00B2E67C /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D36A79B26E37F1600A01D6F /* FailingTestExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailingTestExample.swift; sourceTree = "<group>"; };
+		3D36A79C26E37F1600A01D6F /* RecordVideoTestExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVideoTestExample.swift; sourceTree = "<group>"; };
+		3DA008E8269CD8C200BF367E /* TestRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRecorder.swift; sourceTree = "<group>"; };
+		3DB16A2026E8E09300EC63DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3DB16A2A26E9430C00EC63DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3DB6D0A2269A288C00B2E67C /* ChatBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB6D0A5269A288C00B2E67C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DB6D0AE269A288D00B2E67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +83,7 @@
 		3DB6D0BC269A288D00B2E67C /* ChatInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractorTests.swift; sourceTree = "<group>"; };
 		3DB6D0BE269A288D00B2E67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB6D0C3269A288D00B2E67C /* ChatBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DB6D0C7269A288D00B2E67C /* ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUITests.swift; sourceTree = "<group>"; };
+		3DB6D0C7269A288D00B2E67C /* SuccessfulTestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulTestExample.swift; sourceTree = "<group>"; };
 		3DB6D0C9269A288D00B2E67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB6D0DA269A28DA00B2E67C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		3DB6D0E9269A2A9000B2E67C /* ChatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
@@ -104,7 +114,7 @@
 		3DB6D19A269B1CC100B2E67C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3DB6D19F269B224E00B2E67C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		3DB6D1C2269B706200B2E67C /* ChatRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRobot.swift; sourceTree = "<group>"; };
-		3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		3DB6D1CB269B710C00B2E67C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3DB6D1D3269B71BC00B2E67C /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,12 +137,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB16A2726E8E5F300EC63DC /* SwiftTestKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D7A47DB26E6B1FB003999B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB16A2026E8E09300EC63DC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3DB6D099269A288C00B2E67C = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +159,7 @@
 				3DB6D0BB269A288D00B2E67C /* ChatBoxTests */,
 				3DB6D0C6269A288D00B2E67C /* ChatBoxUITests */,
 				3DB6D0A3269A288C00B2E67C /* Products */,
+				3D7A47DB26E6B1FB003999B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,7 +205,9 @@
 			children = (
 				3DB6D1CA269B710400B2E67C /* Helpers */,
 				3DB6D1C1269B705700B2E67C /* Robots */,
-				3DB6D0C7269A288D00B2E67C /* ChatUITests.swift */,
+				3DB6D0C7269A288D00B2E67C /* SuccessfulTestExample.swift */,
+				3D36A79B26E37F1600A01D6F /* FailingTestExample.swift */,
+				3D36A79C26E37F1600A01D6F /* RecordVideoTestExample.swift */,
 				3DB6D0C9269A288D00B2E67C /* Info.plist */,
 			);
 			path = ChatBoxUITests;
@@ -303,8 +325,10 @@
 		3DB6D1CA269B710400B2E67C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3DB6D1CB269B710C00B2E67C /* AccessibilityIdentifiers.swift */,
+				3DB6D1CB269B710C00B2E67C /* Helpers.swift */,
 				3DB6D1D3269B71BC00B2E67C /* XCUIElement+Extensions.swift */,
+				3DA008E8269CD8C200BF367E /* TestRecorder.swift */,
+				3DB16A2A26E9430C00EC63DC /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -325,6 +349,8 @@
 			dependencies = (
 			);
 			name = ChatBox;
+			packageProductDependencies = (
+			);
 			productName = ChatBox;
 			productReference = 3DB6D0A2269A288C00B2E67C /* ChatBox.app */;
 			productType = "com.apple.product-type.application";
@@ -358,9 +384,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				3DB16A2926E9424500EC63DC /* PBXTargetDependency */,
 				3DB6D0C5269A288D00B2E67C /* PBXTargetDependency */,
 			);
 			name = ChatBoxUITests;
+			packageProductDependencies = (
+				3DB16A2626E8E5F300EC63DC /* SwiftTestKit */,
+			);
 			productName = ChatBoxUITests;
 			productReference = 3DB6D0C3269A288D00B2E67C /* ChatBoxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -396,6 +426,10 @@
 				Base,
 			);
 			mainGroup = 3DB6D099269A288C00B2E67C;
+			packageReferences = (
+				3DB16A1626E8E02E00EC63DC /* XCRemoteSwiftPackageReference "SwiftHttpShell" */,
+				3DB16A1926E8E03B00EC63DC /* XCRemoteSwiftPackageReference "SwiftTestKit" */,
+			);
 			productRefGroup = 3DB6D0A3269A288C00B2E67C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -459,7 +493,7 @@
 				3DB6D0EF269A2AA300B2E67C /* ChatPresenter.swift in Sources */,
 				3DB6D144269A475C00B2E67C /* MessageViewModel.swift in Sources */,
 				3DB6D162269B012700B2E67C /* NSNotification+Extensions.swift in Sources */,
-				3DB6D1D8269B750A00B2E67C /* AccessibilityIdentifiers.swift in Sources */,
+				3DB6D1D8269B750A00B2E67C /* Helpers.swift in Sources */,
 				3DB6D108269A32A900B2E67C /* ApplicationJourney.swift in Sources */,
 				3DB6D0EA269A2A9000B2E67C /* ChatInteractor.swift in Sources */,
 			);
@@ -483,16 +517,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB6D1CC269B710C00B2E67C /* AccessibilityIdentifiers.swift in Sources */,
+				3DB6D1CC269B710C00B2E67C /* Helpers.swift in Sources */,
 				3DB6D1D4269B71BC00B2E67C /* XCUIElement+Extensions.swift in Sources */,
+				3DA008E9269CD8C200BF367E /* TestRecorder.swift in Sources */,
+				3DB16A2B26E9430C00EC63DC /* Extensions.swift in Sources */,
 				3DB6D1C3269B706200B2E67C /* ChatRobot.swift in Sources */,
-				3DB6D0C8269A288D00B2E67C /* ChatUITests.swift in Sources */,
+				3D36A79E26E37F1600A01D6F /* RecordVideoTestExample.swift in Sources */,
+				3D36A79D26E37F1600A01D6F /* FailingTestExample.swift in Sources */,
+				3DB6D0C8269A288D00B2E67C /* SuccessfulTestExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3DB16A2926E9424500EC63DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			productRef = 3DB16A2826E9424500EC63DC /* SwiftTestKit */;
+		};
 		3DB6D0BA269A288D00B2E67C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3DB6D0A1269A288C00B2E67C /* ChatBox */;
@@ -803,6 +846,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DB16A1626E8E02E00EC63DC /* XCRemoteSwiftPackageReference "SwiftHttpShell" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pawelini1/SwiftHttpShell.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		3DB16A1926E8E03B00EC63DC /* XCRemoteSwiftPackageReference "SwiftTestKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pawelini1/SwiftTestKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DB16A2626E8E5F300EC63DC /* SwiftTestKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DB16A1926E8E03B00EC63DC /* XCRemoteSwiftPackageReference "SwiftTestKit" */;
+			productName = SwiftTestKit;
+		};
+		3DB16A2826E9424500EC63DC /* SwiftTestKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DB16A1926E8E03B00EC63DC /* XCRemoteSwiftPackageReference "SwiftTestKit" */;
+			productName = SwiftTestKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DB6D09A269A288C00B2E67C /* Project object */;
 }

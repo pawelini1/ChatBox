@@ -32,7 +32,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "ChatBox"
+        title = ProcessInfo.processInfo.environment["SIMULATOR_UDID"]
     }
     
     override func viewDidAppear(_ animated: Bool) {

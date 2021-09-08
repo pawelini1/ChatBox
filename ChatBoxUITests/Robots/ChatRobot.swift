@@ -7,19 +7,19 @@
 
 import XCTest
 
-@discardableResult func chat(file: StaticString = #file, line: UInt = #line, closure: ((ChatRobot) -> Void)? = nil) -> ChatRobot {
+@discardableResult func chat(file: StaticString = #file, line: UInt = #line, closure: ((ChatRobot) throws -> Void)? = nil) rethrows -> ChatRobot {
     let robot = ChatRobot(file: file, line: line)
-    closure?(robot)
+    try closure?(robot)
     return robot
 }
-
+    
 class ChatRobot {
     static var defaultQuery = XCUIApplication().otherElements.matching(identifier: AccessibilityIdentifiers.Chat.mainView)
     let chatQuery: XCUIElementQuery
     
     init(chatQuery: XCUIElementQuery = ChatRobot.defaultQuery, file: StaticString = #file, line: UInt = #line) {
         self.chatQuery = chatQuery
-        XCTAssertTrue(chatQuery.element.waitForHittable(), "Footer does not exist", file: file, line: line)
+        XCTAssertTrue(chatQuery.element.waitForHittable(), "Chat does not exist", file: file, line: line)
     }
     
     func enterChatMessage(text: String, file: StaticString = #file, line: UInt = #line) {
