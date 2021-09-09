@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D36A79D26E37F1600A01D6F /* FailingTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36A79B26E37F1600A01D6F /* FailingTestExample.swift */; };
-		3D36A79E26E37F1600A01D6F /* RecordVideoTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36A79C26E37F1600A01D6F /* RecordVideoTestExample.swift */; };
+		3D36A79E26E37F1600A01D6F /* AnotherExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36A79C26E37F1600A01D6F /* AnotherExample.swift */; };
 		3DA008E9269CD8C200BF367E /* TestRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA008E8269CD8C200BF367E /* TestRecorder.swift */; };
 		3DB16A2726E8E5F300EC63DC /* SwiftTestKit in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 3DB16A2626E8E5F300EC63DC /* SwiftTestKit */; };
 		3DB16A2B26E9430C00EC63DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB16A2A26E9430C00EC63DC /* Extensions.swift */; };
@@ -70,7 +70,7 @@
 
 /* Begin PBXFileReference section */
 		3D36A79B26E37F1600A01D6F /* FailingTestExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailingTestExample.swift; sourceTree = "<group>"; };
-		3D36A79C26E37F1600A01D6F /* RecordVideoTestExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordVideoTestExample.swift; sourceTree = "<group>"; };
+		3D36A79C26E37F1600A01D6F /* AnotherExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherExample.swift; sourceTree = "<group>"; };
 		3DA008E8269CD8C200BF367E /* TestRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRecorder.swift; sourceTree = "<group>"; };
 		3DB16A2026E8E09300EC63DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3DB16A2A26E9430C00EC63DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				3DB6D1C1269B705700B2E67C /* Robots */,
 				3DB6D0C7269A288D00B2E67C /* SuccessfulTestExample.swift */,
 				3D36A79B26E37F1600A01D6F /* FailingTestExample.swift */,
-				3D36A79C26E37F1600A01D6F /* RecordVideoTestExample.swift */,
+				3D36A79C26E37F1600A01D6F /* AnotherExample.swift */,
 				3DB6D0C9269A288D00B2E67C /* Info.plist */,
 			);
 			path = ChatBoxUITests;
@@ -522,7 +522,7 @@
 				3DA008E9269CD8C200BF367E /* TestRecorder.swift in Sources */,
 				3DB16A2B26E9430C00EC63DC /* Extensions.swift in Sources */,
 				3DB6D1C3269B706200B2E67C /* ChatRobot.swift in Sources */,
-				3D36A79E26E37F1600A01D6F /* RecordVideoTestExample.swift in Sources */,
+				3D36A79E26E37F1600A01D6F /* AnotherExample.swift in Sources */,
 				3D36A79D26E37F1600A01D6F /* FailingTestExample.swift in Sources */,
 				3DB6D0C8269A288D00B2E67C /* SuccessfulTestExample.swift in Sources */,
 			);

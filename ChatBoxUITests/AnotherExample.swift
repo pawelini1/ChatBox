@@ -1,5 +1,5 @@
 //
-//  RecordVideoTestExample.swift
+//  AnotherExample.swift
 //  ChatBoxUITests
 //
 //  Created by Pawel Szymanski on 10/07/2021.
@@ -8,7 +8,7 @@
 import XCTest
 import SwiftTestKit
 
-class RecordVideoTestExample: XCTestCase {
+class AnotherExample: XCTestCase {
     override func setUpWithError() throws {
         try super.setUpWithError()
         
