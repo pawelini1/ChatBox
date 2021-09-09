@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/pawelini1/SwiftHttpShell.git",
         "state": {
           "branch": null,
-          "revision": "a6c069b0da7eaea71b437ea723c637a6dea3526d",
-          "version": "0.1.0"
+          "revision": "a27bd2d7a5067f103ef3ba477547d6adc37df93d",
+          "version": "0.2.0"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "https://github.com/pawelini1/SwiftTestKit.git",
         "state": {
           "branch": null,
-          "revision": "f9e6728b92b75b4080ab9c066a0c41bb319eb58f",
-          "version": "0.1.0"
+          "revision": "bc5243ca6013e2d6df263f72d88eaf2033378558",
+          "version": "0.2.0"
         }
       }
     ]

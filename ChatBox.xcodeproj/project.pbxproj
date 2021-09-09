@@ -853,7 +853,7 @@
 			repositoryURL = "https://github.com/pawelini1/SwiftHttpShell.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.2.0;
 			};
 		};
 		3DB16A1926E8E03B00EC63DC /* XCRemoteSwiftPackageReference "SwiftTestKit" */ = {
@@ -861,7 +861,7 @@
 			repositoryURL = "https://github.com/pawelini1/SwiftTestKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

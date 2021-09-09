@@ -13,10 +13,10 @@ class FailingTestExample: XCTestCase {
         try super.setUpWithError()
         
         try shell(
-            .uninstall(application: .chatBox, fromSimulator: .current()),
-            .set(appearance: .dark, inSimulator: .current())
+            .startRecordingVideo(),
+            .uninstall(application: .chatBox),
+            .set(appearance: .dark)
         )
-        recordVideo()
         
         XCUIApplication().launch()
     }
@@ -24,7 +24,8 @@ class FailingTestExample: XCTestCase {
     override func tearDownWithError() throws {
         try super.tearDownWithError()
         try shell(
-            .set(appearance: .light, inSimulator: .current())
+            .stopRecordingVideo(completion: addVideoAttachment),
+            .set(appearance: .light)
         )
     }
 

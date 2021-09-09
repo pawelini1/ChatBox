@@ -13,9 +13,8 @@ class RecordVideoTestExample: XCTestCase {
         try super.setUpWithError()
         
         try shell(
-            .uninstall(application: .chatBox, fromSimulator: .current())
+            .uninstall(application: .chatBox)
         )
-        recordVideo()
         
         XCUIApplication().launch()
     }

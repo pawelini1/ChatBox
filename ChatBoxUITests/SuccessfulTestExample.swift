@@ -13,7 +13,7 @@ class SuccessfulTestExample: XCTestCase {
         try super.setUpWithError()
         
         try shell(
-            .uninstall(application: .chatBox, fromSimulator: .current())
+            .uninstall(application: .chatBox)
         )
         
         XCUIApplication().launch()
